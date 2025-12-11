@@ -16,3 +16,19 @@
 				<RowDefinition Height="Auto"/>
 				<RowDefinition Height="*"/>
 			</Grid.RowDefinitions>
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+
+				<Label Content="Имя:"/>
+				<TextBox Grid.Column="1" x:Name="NameTextBox" />
+				<Label Content="Телефон:" Grid.Row="1"/>
+				<TextBox Grid.Column="1" Grid.Row="1" x:Name="TelephoneTextBox"
+                         PreviewTextInput="TelephoneTextBox_PreviewTextInput"/>
+			</Grid>	
